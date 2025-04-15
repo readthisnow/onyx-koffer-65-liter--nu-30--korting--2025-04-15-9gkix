@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx Koffer 65 Liter - Exclusieve Aanbieding</title>
+    <meta name="description" content="Ontdek de luxe Onyx Koffer met 30% korting. Premium kwaliteit, beperkte voorraad beschikbaar.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-gray-50">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-900">Onyx</div>
+                <button @click="isOpen = !isOpen" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors">Kenmerken</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors">Voordelen</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors">FAQ</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <span class="inline-block px-4 py-2 rounded-full bg-red-100 text-red-800 text-sm font-semibold mb-6">⚡ NOG MAAR 30% KORTING - BEPERKTE TIJD!</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">Onyx Koffer 65 Liter</h1>
+                    <p class="text-xl text-gray-600 mb-8">🔥 Al meer dan 1.000+ tevreden reizigers kozen voor deze premium koffer!</p>
+                    <a href="https://amzn.to/42JzAch" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg transform transition hover:scale-105 shadow-lg">
+                        Bekijk Aanbieding
+                    </a>
+                    <p class="text-sm text-gray-500 mt-4">⚡ Nog maar enkele stuks op voorraad tegen deze prijs</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-16">Premium Kenmerken</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Ultiem Comfort</h3>
+                        <p class="text-gray-600">360° draaiende wielen voor moeiteloos reizen</p>
+                    </div>
+                    <!-- More feature cards... -->
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-16">Waarom Kiezen Voor Onyx?</h2>
+                <div class="max-w-3xl mx-auto space-y-12">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Premium Kwaliteit</h3>
+                            <p class="text-gray-600">Gemaakt van hoogwaardig materiaal voor jarenlang gebruiksgemak</p>
+                        </div>
+                    </div>
+                    <!-- More benefits... -->
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-16">Veelgestelde Vragen</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div x-data="{ open: false }" class="border rounded-lg">
+                        <button @click="open = !open" class="flex justify-between items-center w-full px-6 py-4 text-left">
+                            <span class="font-semibold">Wat is de levertijd?</span>
+                            <svg class="w-5 h-5 transform transition-transform" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div x-show="open" class="px-6 pb-4">
+                            <p class="text-gray-600">Meestal binnen 1-3 werkdagen geleverd</p>
+                        </div>
+                    </div>
+                    <!-- More FAQ items... -->
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-blue-600">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-white mb-8">Mis Deze Aanbieding Niet!</h2>
+                <a href="https://amzn.to/42JzAch" class="inline-block bg-white text-blue-600 font-bold py-4 px-8 rounded-lg transform transition hover:scale-105 shadow-lg">
+                    Profiteer Nu van 30% Korting
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Contact</h3>
+                    <p>info@amazon.nl</p>
+                </div>
+                <!-- More footer columns... -->
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-sm text-center">
+                <p>&copy; 2024 Onyx. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
